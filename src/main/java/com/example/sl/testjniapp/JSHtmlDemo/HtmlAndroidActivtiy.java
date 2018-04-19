@@ -14,6 +14,8 @@ import com.example.sl.testjniapp.R;
 /**
  * https://www.cnblogs.com/galibujianbusana/p/6511249.html
  * 附带的链接地址
+ * 其中还需要学习的是android 中动态在html中注入js
+ * https://www.aliyun.com/jiaocheng/48686.html  同类的还有很多
  */
 public class HtmlAndroidActivtiy extends AppCompatActivity {
     WebView contentWebView;
@@ -56,6 +58,7 @@ public class HtmlAndroidActivtiy extends AppCompatActivity {
                 contentWebView.loadUrl("javascript:javacalljswith(" + "'这里是调用js方法'" + ")");
             }
         });
+
     }
 
     @JavascriptInterface
