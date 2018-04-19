@@ -11,6 +11,10 @@ import android.widget.Toast;
 
 import com.example.sl.testjniapp.R;
 
+/**
+ * https://www.cnblogs.com/galibujianbusana/p/6511249.html
+ * 附带的链接地址
+ */
 public class HtmlAndroidActivtiy extends AppCompatActivity {
     WebView contentWebView;
     @Override

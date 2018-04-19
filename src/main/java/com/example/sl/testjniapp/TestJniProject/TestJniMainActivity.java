@@ -12,6 +12,9 @@ import static com.example.sl.testjniapp.jniTestOne.JniMethodC.getNativeCString;
 
 /**
  * Created by Administrator on 2018/4/19 0019.
+ * https://blog.csdn.net/u013278099/article/details/51927631   jni相关的高效配置地址
+ * https://blog.csdn.net/fangyoayu2013/article/details/51094061
+ * 以上的方法亲测，很好使用，不需要手动的javac javah
  */
 public class TestJniMainActivity extends Activity {
     TextView jni_method_tv;
