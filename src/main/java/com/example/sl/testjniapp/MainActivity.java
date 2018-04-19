@@ -11,10 +11,12 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.TextView;
 
+import com.example.sl.testjniapp.JSHtmlDemo.HtmlAndroidActivtiy;
 import com.example.sl.testjniapp.TestJniProject.TestJniMainActivity;
 
 public class MainActivity extends AppCompatActivity {
     TextView jump_jni_activity_tv;
+    TextView jump_html_activity_tv;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -41,6 +43,16 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent=new Intent();
                 intent.setClass(MainActivity.this, TestJniMainActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        jump_html_activity_tv= (TextView) findViewById(R.id.jump_html_activity_tv);
+        jump_html_activity_tv.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent();
+                intent.setClass(MainActivity.this, HtmlAndroidActivtiy.class);
                 startActivity(intent);
             }
         });

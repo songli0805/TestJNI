@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+<head>
+    <!-- 设置当前HTML文件的字符编码 -->
+    <meta charset="utf-8">
+    <!-- 设置浏览器的兼容模式版本 （让IE使用最新的渲染引擎工作） -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- 声明当前网页在移动端浏览器中展示的相关设置 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <script
+        type="text/javascript">
+        function javacalljs(){
+         document.getElementById("content").innerHTML =
+         "<br\>JAVA调用了JS的无参函数";
+        }
+
+        function javacalljswith(arg){
+        document.getElementById("content").innerHTML =
+         ("<br\>"+arg);
+        }
+
+
+    </script>
+</head>
+<body>
+这里是HTML <br/>
+<h1><div id="content">HTML内容显示</div></h1>
+<br/>
+<input type="button"  value="调用android代码" onclick="window.android.startFunction()" />
+<br/>
+<input type="button"  value="调用android代码并传递参数" onclick="window.android.startFunction('这里是js调用Android方法')"  />
+</body>
+</html>

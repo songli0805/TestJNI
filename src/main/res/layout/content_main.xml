@@ -74,6 +74,13 @@
             android:id="@+id/jump_jni_activity_tv"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:text="跳转HTML界面"
+            android:id="@+id/jump_html_activity_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
     </LinearLayout>
 
 
